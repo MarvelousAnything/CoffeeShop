@@ -1,5 +1,5 @@
 package com.thearchermancoding.core;
 
-public class Employee implements Person {
+public class Employee extends Person {
     private JobTitles jobTitle;
 }

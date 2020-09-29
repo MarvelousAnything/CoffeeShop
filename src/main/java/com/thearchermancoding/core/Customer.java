@@ -1,4 +1,8 @@
 package com.thearchermancoding.core;
 
-public class Customer implements Person {
+import java.util.ArrayList;
+
+public class Customer extends Person {
+    private ArrayList<Order> orders = new ArrayList<Order>();
+
 }
