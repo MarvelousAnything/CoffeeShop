@@ -18,4 +18,8 @@ public class Counter {
     public int getNext() {
         return count++;
     }
+
+    public String toString() {
+        return String.valueOf(this.count);
+    }
 }
