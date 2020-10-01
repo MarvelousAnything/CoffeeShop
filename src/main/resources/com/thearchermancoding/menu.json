@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Coffee",
+    "price": 2.50,
+    "description": "It is just coffee..."
+  },
+  {
+    "name": "Sandwich",
+    "price": 4.99,
+    "description": "It is just a sandwich..."
+  }
+]
