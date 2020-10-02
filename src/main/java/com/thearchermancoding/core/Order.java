@@ -1,6 +1,7 @@
 package com.thearchermancoding.core;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * The type Order.
@@ -36,6 +37,11 @@ public class Order {
      */
     public void addItem(OrderItem item) {
         contents.add(item);
+    }
+
+    public void addItems() {
+        Scanner scan = new Scanner(System.in);
+        String
     }
 
     /**

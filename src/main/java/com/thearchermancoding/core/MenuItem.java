@@ -103,4 +103,8 @@ public class MenuItem {
     public static MenuItem fromJSON(JSONObject item) {
         return new MenuItem((String) item.get("name"), (double) item.get("price"), (String) item.get("description"));
     }
+
+    public String toString() {
+        return this.name + "\t\t$" + this.price;
+    }
 }

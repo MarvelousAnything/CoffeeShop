@@ -11,9 +11,25 @@ public class Customer extends Person {
     /**
      * Place order.
      *
-     * @param item the item
+     * @param order the order
      */
-    public void placeOrder(MenuItem item) {
+    public void placeOrder(Order order) {
+        orders.add(order);
+    }
 
+    public Order getOrder(int id) {
+        return orders.get(id);
+    }
+
+    public void addItemToOrder(int orderId, OrderItem item) {
+        orders.get(orderId).addItem(item);
+    }
+
+    public ArrayList<Order> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(ArrayList<Order> orders) {
+        this.orders = orders;
     }
 }

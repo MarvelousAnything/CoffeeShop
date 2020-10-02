@@ -27,6 +27,23 @@ public class CoffeeShop {
     }
 
     /**
+     * Instantiates a new Coffee shop.
+     */
+    public CoffeeShop() {
+        this("A Coffee Shop", "12345 123th ave E", new ArrayList<Employee>(), new Menu());
+    }
+
+    /**
+     * Instantiates a new Coffee shop.
+     *
+     * @param name    the name
+     * @param address the address
+     */
+    public CoffeeShop(String name, String address) {
+        this(name, address, new ArrayList<Employee>(), new Menu());
+    }
+
+    /**
      * Gets name.
      *
      * @return the name
@@ -78,6 +95,10 @@ public class CoffeeShop {
      */
     public void setEmployees(ArrayList<Employee> employees) {
         this.employees = employees;
+    }
+
+    public void addEmployee(Employee employee) {
+        employees.add(employee);
     }
 
     /**
