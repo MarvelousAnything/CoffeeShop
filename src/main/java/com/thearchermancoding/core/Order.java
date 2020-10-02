@@ -41,7 +41,6 @@ public class Order {
 
     public void addItems() {
         Scanner scan = new Scanner(System.in);
-        String
     }
 
     /**
