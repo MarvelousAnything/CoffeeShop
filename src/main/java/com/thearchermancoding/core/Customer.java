@@ -14,6 +14,7 @@ public class Customer extends Person {
      * @param order the order
      */
     public void placeOrder(Order order) {
+        order.addItems(this.getCurrentCoffeeShop().getMenu());
         orders.add(order);
     }
 

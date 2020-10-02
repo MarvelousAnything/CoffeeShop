@@ -56,6 +56,14 @@ public abstract class Person {
         return balance;
     }
 
+    public CoffeeShop getCurrentCoffeeShop() {
+        return currentCoffeeShop;
+    }
+
+    public void setCurrentCoffeeShop(CoffeeShop currentCoffeeShop) {
+        this.currentCoffeeShop = currentCoffeeShop;
+    }
+
     /**
      * Sets balance.
      *

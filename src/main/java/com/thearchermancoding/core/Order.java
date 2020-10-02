@@ -39,8 +39,10 @@ public class Order {
         contents.add(item);
     }
 
-    public void addItems() {
+    public void addItems(Menu menu) {
         Scanner scan = new Scanner(System.in);
+        System.out.print(menu);
+        scan.close();
     }
 
     /**

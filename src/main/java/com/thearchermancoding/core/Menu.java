@@ -38,8 +38,10 @@ public class Menu {
      * @param path the path
      */
     public Menu(String path) {
+        this.menu = new ArrayList<MenuItem>();
         JSONParser parser = new JSONParser();
         try {
+            //TODO: make it so the path in the parameter is the entire project path as apposed to being relative to the resources folder.
             JSONArray items = (JSONArray) parser.parse(new FileReader(System.getProperty("user.dir") + "\\src\\main\\resources\\com\\thearchermancoding\\" + path));
             for (Object item : items) {
                 menu.add(MenuItem.fromJSON((JSONObject) item));
@@ -66,5 +68,14 @@ public class Menu {
      */
     public MenuItem getItem(int id) {
         return menu.get(id);
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder();
+        for (MenuItem item : menu) {
+            out.append(item).append("\n");
+        }
+        return out.toString();
     }
 }

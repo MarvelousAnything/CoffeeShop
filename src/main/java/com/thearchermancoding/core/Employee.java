@@ -85,4 +85,12 @@ public class Employee extends Person {
     public void setEmployer(CoffeeShop employer) {
         this.employer = employer;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "jobTitle=" + jobTitle.getTitle() +
+                ", employer=" + employer.getName() +
+                '}';
+    }
 }
