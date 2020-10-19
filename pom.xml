@@ -39,7 +39,7 @@
             <plugin>
                 <groupId>org.openjfx</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>0.0.4</version>
+                <version>0.0.5</version>
                 <configuration>
                     <mainClass>com.thearchermancoding.App</mainClass>
                     <launcher>launch</launcher>
